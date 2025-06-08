@@ -1,8 +1,4 @@
-# gdal_info.pyx
-
 from gdal_info cimport GDALOpen, GDALClose, GDALInfo, GDALDatasetH, GDALAllRegister
-from libc.string cimport strdup
-from cpython.bytes cimport PyBytes_FromString
 
 def gdal_info(str filepath):
     cdef GDALDatasetH ds
